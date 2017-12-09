@@ -1,5 +1,15 @@
-# 这是一个使用maven集成SSh框架的大体过程，梳理一下思路，也希望对你有用
-
+# 这是一个使用maven集成SSh框架的大体过程，梳理一下思路，也希望对你有用:-1::-1::-1::-1:
+## poem.xml 在这里锁定了ssh的版本信息
+```
+<!-- 属性 -->
+	<properties>
+		<spring.version>4.2.4.RELEASE</spring.version>
+		<hibernate.version>5.0.7.Final</hibernate.version>
+		<struts.version>2.3.24</struts.version>
+	</properties>
+	<!-- 锁定版本，struts2-2.3.24、spring4.2.4、hibernate5.0.7 -->
+```
+后面的plugin 信息，根据自己的电脑设置自行配置
 ## 搭建struts2环境
 ### 1创建Struts2配置文件 ：struts.xml
 ```
@@ -14,8 +24,8 @@
 	</filter-mapping>
 ```
 ## 搭建spring环境
-1、创建spring配置文件applicationContext.xml  
-2、在web.xml中配置监听器：ContextLoaderListener  
+1. 创建spring配置文件applicationContext.xml  
+2. 在web.xml中配置监听器：ContextLoaderListener  
 ```
 <!-- 配置监听器：默认加载WEB-INF/applicationContext.xml -->
 	<listener>
@@ -132,7 +142,7 @@
 	</bean>
 		
 ```
-
+欢迎star我:smile::wink:
 
 
 
